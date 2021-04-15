@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+	<image class="avatar" src="../../images/avatar/2.png"></image>
+	<text>Hello Robin!</text>
+	<view class="motto">
+   <view class="journey-container">
+    <text>开启小程序之旅</text>
+   </view>
+  </view>
+</view>
