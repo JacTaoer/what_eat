@@ -1,0 +1,45 @@
+<view class="page">
+	<view class="flex-eat">
+		<view class="title">今天吃什么
+		<view class="menu">{{menu}}</view>
+		</view>
+		<view class="button" bindtap="onButton" >{{isLoading?'停':firstLoad?'开始':'换一个'}}</view>
+ </view>
+ <view class="write" bindtap="onCustmenu">自定义菜单</view>
+</view>
+
+
+	<van-popup
+		type="popup"
+		show="{{ show }}"
+		round
+		position="bottom"
+		closeable
+		close-icon-position="top-left"
+		close-icon="close"
+		close-icon-size="100"
+		custom-style="height: 30%"
+		bind:close="onClose"
+		
+	>
+		<view class="caidan">菜单</view>
+		<van-button bind:tap="onMenu"  type="primary" >提交</van-button>
+		<van-cell-group>
+		<van-field			
+			value="{{menuList}}"
+			border="{{ false }}"
+			bind:change="onChange"
+			border="true"
+			type="textarea"
+			autosize="maxHeight: 150, minHeight: 50"
+		
+		/>
+	</van-cell-group>
+	</van-popup>
+
+
+
+
+
+
+	
