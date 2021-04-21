@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/home/index",
-    "pages/index/index",
-    "pages/posts/posts"
+    "pages/eat/index",
+    "pages/myIndex/myindex"
   ],
   "window": {
     "backgroundTextStyle": "light",
