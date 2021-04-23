@@ -1,3 +1,33 @@
-<view>
-  <view>第一次更新！！</view>
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="nickName">
+        <open-data type="userNickName"></open-data>
+      </view>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+  </view>
 </view>
+<view>
+<view class="List_box">
+  <block wx:for="{{List}}" wx:key="key" >
+    <view class="List">
+      
+      <image src="{{item.icon}}"></image>
+      <text>{{item.name}}</text>     
+    </view>   
+  </block>
+</view>
+  <button class="button" open-type="contact"> 
+  <image src="../myIndex/image/联系.png"></image>
+  <text>联系我们</text>
+  </button>
+</view>
+

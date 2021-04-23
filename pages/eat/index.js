@@ -1,12 +1,13 @@
 
 Page({ 
   data: {
-    menuList:["盐焗巴拉龟","鱼香肉丝","土豆里脊", "干锅花菜", "手撕包菜", "农家小炒肉", "肉末茄子"],
+    menuList:["鱼香肉丝","土豆里脊", "干锅花菜", "手撕包菜", "农家小炒肉", "肉末茄子"],
     changeList:[],
     firstLoad:true,
     isLoading:false,
     setInter:null,
-    show:false
+    show:false,
+   
   },
 
   startSetInter:function(t){

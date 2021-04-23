@@ -1,1 +1,83 @@
-/* pages/myIndex/myindex.wxss */
+
+.container{
+  position: absolute;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000;
+  position: relative;
+  top: -160rpx;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+
+}
+
+.nickName{
+  margin-left: 50rpx;
+}
+
+.List_box{
+  position: absolute;
+  top: 300rpx;
+  
+}
+
+.List{
+  width: 100em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1rpx solid #E0E0E0;
+  
+}
+
+.List:last-child{
+  border-bottom: 1rpx solid #E0E0E0	;
+}
+
+.List image{
+  width: 60rpx;
+  height: 60rpx;
+  margin:30rpx;
+}
+
+.List text{
+  margin-left: 30rpx;
+}
+
+.button{
+  position: relative;
+  top: 550rpx;
+  right: 165rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.button image{
+  position: relative;
+  right: 70rpx;
+  bottom: 18rpx;
+  width: 60rpx;
+  height: 60rpx;
+  margin:30rpx;
+}
+
+.button text{
+  font-size: 32rpx;
+  font-weight: 348;
+  position: relative;
+  right: 60rpx;
+  top: 20rpx;
+  right: 40rpx;
+}
